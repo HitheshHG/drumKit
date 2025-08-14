@@ -1,3 +1,3 @@
 # drumKit
 
-live : https://hitheshhg.github.io/drumKit/
+live : https://hitheshhg.github.io/drumKit
