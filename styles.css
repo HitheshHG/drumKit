@@ -1,9 +1,15 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   text-align: center;
   background: radial-gradient(circle at center, #1e2749 0%, #0d1424 100%);
   font-family: "Arvo", cursive;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -30,21 +36,23 @@ h1 {
   animation: fadeIn 1.2s ease-in-out, pulseGlow 2s infinite alternate;
 }
 
+.set {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
 footer {
   color: #fff;
   font-family: sans-serif;
   padding: 20px;
   font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
-}
-
-.set {
-  margin: 8% auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+  text-align: center;
 }
 
 .drum {
@@ -150,36 +158,4 @@ footer {
   to {
     text-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff4cb6, 0 0 40px #ff1c9e;
   }
-}
-html,
-body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  background: radial-gradient(circle at center, #1e2749 0%, #0d1424 100%);
-  text-align: center;
-  font-family: "Arvo", cursive;
-}
-
-.set {
-  flex: 1; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-
-footer {
-  color: #fff;
-  font-family: sans-serif;
-  padding: 20px;
-  font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
-  text-align: center;
 }
